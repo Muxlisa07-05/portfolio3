@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Rubik Gemstones;
+    background-color: rgb(6, 6, 26);
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+   
+    color: rgb(152, 5, 110);
+    position: relative;
+    
+}
+
+.container{
+    width: 800px;
+    height: 200px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.clock div{
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+}
+
+.clock div::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#hours::after{
+    content: "HOURS";
+
+}
+
+#minutes::after{
+    content: "MINS";
+}
+
+#seconds::after{
+    content: "SEC";
+}
+
+@media (max-width:1441px) {
+    .container{
+        width: 800px;
+        height: 200px;
+        background-color: black;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 200px;
+    }
+
+    .clock div{
+        font-size: 80px;
+        width: 110px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        bottom: 10px;
+    }
+    
+    .clock div::after{
+        font-size: 16px;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width:720px) {
+    .container{
+        width: 300px;
+        height: 100px;
+        background-color: black;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 200px;
+    }
+
+    .clock div{
+        font-size: 30px;
+        width: 40px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        bottom: 10px;
+    }
+    
+    .clock div::after{
+        font-size: 6px;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
